@@ -81,7 +81,7 @@ exports.handler = function(event, context, callback) {
             console.info(invoke_payload);
             
             lambda_params = {
-                FunctionName: 'backupCouchDBServer',
+                FunctionName: 'execute-couch-backup',
                 InvocationType: 'RequestResponse',
                 LogType: 'Tail',
                 Payload: invoke_payload
